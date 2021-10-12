@@ -1,0 +1,57 @@
+[server]
+port = 8080
+data_dir = "/app/data"
+hostname = "https://internal.andc.nz/podsync"
+
+[downloader]
+self_update = true
+
+[tokens]
+youtube = "AIzaSyC4UXp-oE2kTT6oq_z28ncFnudLCBZvKlg"
+vimeo = "{VIMEO_API_TOKEN}"
+
+[feeds.colinfurze]
+url = "https://www.youtube.com/user/colinfurze"
+page_size = 10
+update_period = "20h"
+quality = "high"
+format = "video"
+clean = { keep_last = 10 }
+
+[feeds.colinfurze3]
+url = "https://www.youtube.com/user/colinfurze"
+page_size = 1
+update_period = "10h"
+quality = "high"
+format = "video"
+
+[feeds.colinfurze5]
+url = "http://url.com"
+page_size = 1
+update_period = "1h"
+quality = "high"
+format = "video"
+
+[feeds.colinfurze6]
+url = "http://url.com"
+page_size = 1
+update_period = "20h"
+quality = "high"
+format = "video"
+
+[feeds.colinfurze7]
+url = "https://www.youtube.com/user/colinfurze"
+page_size = 1
+update_period = "1h"
+quality = "high"
+format = "video"
+clean = { keep_last = 10 }
+
+[feeds.colinfurze3.clean]
+keep_last = 10
+
+[feeds.colinfurze5.clean]
+keep_last = 10
+
+[feeds.colinfurze6.clean]
+keep_last = 10
